@@ -24,6 +24,8 @@ const configurePicker = (index) => {
 }
 
 let currentFrame = 0
+configurePicker(currentFrame)
+
 Time.setInterval(() => {
   configurePicker(currentFrame)
   currentFrame = (currentFrame + 1) % numIconFrames
