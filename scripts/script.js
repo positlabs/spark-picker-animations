@@ -7,9 +7,10 @@ const { picker } = require('NativeUI')
 const numIconFrames = 25
 const fps = 12
 
+// hide picker during capture
 picker.visible = R.not(R.or(CameraInfo.isRecordingVideo, CameraInfo.isCapturingPhoto))
 
-const configure = (index) => {
+const configurePicker = (index) => {
   picker.configure({
     selectedIndex: 0,
     items: [
@@ -22,8 +23,8 @@ const configure = (index) => {
   })
 }
 
-let index = 0
+let currentFrame = 0
 Time.setInterval(() => {
-  configure(index)
-  index = (index + 1) % numIconFrames
+  configurePicker(currentFrame)
+  currentFrame = (currentFrame + 1) % numIconFrames
 }, 1000 / fps)
