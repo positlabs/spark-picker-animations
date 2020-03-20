@@ -2,9 +2,9 @@
 
 The picker won't accept animation sequences, but we can trick it into animating a sequence of individual images.
 
-[Demo on YouTube](https://youtu.be/)
+[Demo on YouTube](https://youtu.be/nN3CIi17lnI)
 
-[![](./screenshot.jpg)](https://youtu.be/)
+[![](./screenshot.jpg)](https://youtu.be/nN3CIi17lnI)
 
 
 ## Resources
